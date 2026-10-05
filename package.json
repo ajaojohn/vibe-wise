@@ -1,9 +1,18 @@
 {
-  "name": "vibe-wise-pi",
-  "private": true,
+  "name": "pi-vibe-wise",
+  "version": "0.1.0",
+  "description": "VibeWise learning-first development for pi (port of the Claude Code plugin by nykooi1)",
+  "license": "MIT",
+  "repository": "github:ajaojohn/vibe-wise",
   "keywords": ["pi-package"],
+  "files": ["pi/", "skills/", "hooks/session_start.py", "LICENSE", "README.md"],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
   "pi": {
     "extensions": ["./pi/extension.ts"],
-    "skills": ["./skills"]
+    "skills": ["./skills"],
+    "image": "https://raw.githubusercontent.com/ajaojohn/vibe-wise/main/assets/vibewise-icon.png"
   }
 }
