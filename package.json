@@ -1,0 +1,9 @@
+{
+  "name": "vibe-wise-pi",
+  "private": true,
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./pi/extension.ts"],
+    "skills": ["./skills"]
+  }
+}
