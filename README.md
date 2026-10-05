@@ -8,7 +8,27 @@ A Claude Code plugin that puts learning first and keeps you in control while AI 
 
 For anyone who wants to learn as they build—whether you're an aspiring engineer, a junior developer, or an experienced engineer exploring an unfamiliar stack. Practice planning how the pieces fit together, anticipating failures, and checking the result while keeping ownership of the decisions.
 
-## Get started
+## Using VibeWise with pi
+
+This fork packages VibeWise for the [pi coding agent](https://pi.dev). It is a port of
+[nykooi1/vibe-wise](https://github.com/nykooi1/vibe-wise); the skills are unchanged,
+and a small extension (`pi/extension.ts`) adds what Claude Code provides natively:
+restoring your learning notes on session start and after compaction, and the
+arrow-key picker used for setup and checkpoints.
+
+You need [Python 3](https://www.python.org/downloads/) (`python3` on your PATH). Install:
+
+```bash
+pi install npm:pi-vibe-wise
+```
+
+Restart pi in your project, then run `/skill:learn`. To reset this project's learning
+notes, run `/skill:reset`. Wherever the rest of this README says `/vibe-wise:learn`
+or `/vibe-wise:reset`, use these commands instead; references to Claude apply to pi's agent.
+
+The Claude Code instructions below still apply to the original plugin.
+
+## Get started with Claude Code
 
 You need [Claude Code](https://code.claude.com/docs/en/setup) and
 [Python 3](https://www.python.org/downloads/). VibeWise uses Python to restore
